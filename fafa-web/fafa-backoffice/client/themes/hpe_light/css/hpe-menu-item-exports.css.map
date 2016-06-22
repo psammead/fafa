@@ -1,0 +1,11 @@
+{
+	"version": 3,
+	"file": "hpe-menu-item-exports.css",
+	"sources": [
+		"../scss/components/hpe-menu-item-exports.scss",
+		"../scss/_hpe-variables.scss",
+		"../scss/_bootstrap-variables.scss"
+	],
+	"mappings": "AAGA,sBAAsB,CAAC,EAAE,CAAC,EAAE,AAAA,UAAW,CAAA,IAAI,EAAE;EACzC,UAAU,ECQH,OAAG,GDPb",
+	"names": []
+}

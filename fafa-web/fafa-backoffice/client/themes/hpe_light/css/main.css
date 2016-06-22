@@ -1,0 +1,275 @@
+@font-face {
+  font-family: "MetricHPE";
+  src: url("../fonts/MetricHPE/MetricHPE-Web-Light.woff");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: "MetricHPE";
+  src: url("../fonts/MetricHPE/MetricHPE-Web-LightItalic.woff");
+  font-weight: 100;
+  font-style: italic; }
+
+@font-face {
+  font-family: "MetricHPE";
+  src: url("../fonts/MetricHPE/MetricHPE-Web-Thin.woff");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: "MetricHPE";
+  src: url("../fonts/MetricHPE/MetricHPE-Web-ThinItalic.woff");
+  font-weight: 200;
+  font-style: italic; }
+
+@font-face {
+  font-family: "MetricHPE";
+  src: url("../fonts/MetricHPE/MetricHPE-Web-Regular.woff");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "MetricHPE";
+  src: url("../fonts/MetricHPE/MetricHPE-Web-RegularItalic.woff");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: "MetricHPE";
+  src: url("../fonts/MetricHPE/MetricHPE-Web-Medium.woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: "MetricHPE";
+  src: url("../fonts/MetricHPE/MetricHPE-Web-MediumItalic.woff");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: "MetricHPE";
+  src: url("../fonts/MetricHPE/MetricHPE-Web-Semibold.woff");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: "MetricHPE";
+  src: url("../fonts/MetricHPE/MetricHPE-Web-SemiboldItalic.woff");
+  font-weight: 600;
+  font-style: italic; }
+
+@font-face {
+  font-family: "MetricHPE";
+  src: url("../fonts/MetricHPE/MetricHPE-Web-Bold.woff");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "MetricHPE";
+  src: url("../fonts/MetricHPE/MetricHPE-Web-BoldItalic.woff");
+  font-weight: 700;
+  font-style: italic; }
+
+@font-face {
+  font-family: "MetricHPE";
+  src: url("../fonts/MetricHPE/MetricHPE-Web-Black.woff");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: "MetricHPE";
+  src: url("../fonts/MetricHPE/MetricHPE-Web-BlackItalic.woff");
+  font-weight: 800;
+  font-style: italic; }
+
+@font-face {
+  font-family: "HPE Simple";
+  src: url("../fonts/HPE Simple/HPESimple-Light.woff");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: "HPE Simple";
+  src: url("../fonts/HPE Simple/HPESimple-LightOblique.woff");
+  font-weight: 200;
+  font-style: italic; }
+
+@font-face {
+  font-family: "HPE Simple";
+  src: url("../fonts/HPE Simple/HPESimple-Regular.woff");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "HPE Simple";
+  src: url("../fonts/HPE Simple/HPESimple-Oblique.woff");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: "HPE Simple";
+  src: url("../fonts/HPE Simple/HPESimple-Bold.woff");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "HPE Simple";
+  src: url("../fonts/HPE Simple/HPESimple-BoldOblique.woff");
+  font-weight: 700;
+  font-style: italic; }
+
+.hpe-menu-item-logo {
+  height: 74px; }
+
+.color-primary {
+  color: #01a982 !important; }
+  .color-primary-light {
+    color: #01c296 !important; }
+  .color-primary-dark {
+    color: #005340 !important; }
+
+.color-success {
+  color: #01a982 !important; }
+  .color-success-light {
+    color: #01c296 !important; }
+  .color-success-dark {
+    color: #005340 !important; }
+
+.color-info {
+  color: #2ad2c9 !important; }
+  .color-info-light {
+    color: #3dd8d0 !important; }
+  .color-info-dark {
+    color: #1c8a84 !important; }
+
+.color-warning {
+  color: #ffd042 !important; }
+  .color-warning-light {
+    color: #ffd65c !important; }
+  .color-warning-dark {
+    color: #eab000 !important; }
+
+.color-danger {
+  color: #ff454f !important; }
+  .color-danger-light {
+    color: #ff5f67 !important; }
+  .color-danger-dark {
+    color: #ed000d !important; }
+
+.background-primary {
+  background-color: #01a982 !important;
+  color: white !important; }
+  .background-primary-light {
+    background-color: #01c296 !important;
+    color: white !important; }
+  .background-primary-dark {
+    background-color: #005340 !important;
+    color: white !important; }
+
+.background-success {
+  background-color: #01a982 !important;
+  color: white !important; }
+  .background-success-light {
+    background-color: #01c296 !important;
+    color: white !important; }
+  .background-success-dark {
+    background-color: #005340 !important;
+    color: white !important; }
+
+.background-info {
+  background-color: #2ad2c9 !important;
+  color: white !important; }
+  .background-info-light {
+    background-color: #3dd8d0 !important;
+    color: white !important; }
+  .background-info-dark {
+    background-color: #1c8a84 !important;
+    color: white !important; }
+
+.background-warning {
+  background-color: #ffd042 !important;
+  color: white !important; }
+  .background-warning-light {
+    background-color: #ffd65c !important;
+    color: white !important; }
+  .background-warning-dark {
+    background-color: #eab000 !important;
+    color: white !important; }
+
+.background-danger {
+  background-color: #ff454f !important;
+  color: white !important; }
+  .background-danger-light {
+    background-color: #ff5f67 !important;
+    color: white !important; }
+  .background-danger-dark {
+    background-color: #ed000d !important;
+    color: white !important; }
+
+.border-primary {
+  border-color: #01a982 !important; }
+  .border-primary-light {
+    border-color: #01c296 !important; }
+  .border-primary-dark {
+    border-color: #005340 !important; }
+
+.border-success {
+  border-color: #01a982 !important; }
+  .border-success-light {
+    border-color: #01c296 !important; }
+  .border-success-dark {
+    border-color: #005340 !important; }
+
+.border-info {
+  border-color: #2ad2c9 !important; }
+  .border-info-light {
+    border-color: #3dd8d0 !important; }
+  .border-info-dark {
+    border-color: #1c8a84 !important; }
+
+.border-warning {
+  border-color: #ffd042 !important; }
+  .border-warning-light {
+    border-color: #ffd65c !important; }
+  .border-warning-dark {
+    border-color: #eab000 !important; }
+
+.border-danger {
+  border-color: #ff454f !important; }
+  .border-danger-light {
+    border-color: #ff5f67 !important; }
+  .border-danger-dark {
+    border-color: #ed000d !important; }
+
+.badge-success {
+  background-color: #01a982 !important; }
+
+.badge-info {
+  background-color: #2ad2c9 !important; }
+
+.badge-warning {
+  background-color: #ffd042 !important; }
+
+.badge-danger {
+  background-color: #ff454f !important; }
+
+.dropdown-menu li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857;
+  color: #333333;
+  white-space: nowrap; }
+
+.dropdown-menu .selected > a {
+  background-color: #425563;
+  color: white; }
+
+.dropdown-menu li > a:hover, .dropdown-menu li > a:focus {
+  text-decoration: none;
+  color: white;
+  background-color: #01a982; }
+
+.padding-no-topbar {
+  padding-top: 15px; }

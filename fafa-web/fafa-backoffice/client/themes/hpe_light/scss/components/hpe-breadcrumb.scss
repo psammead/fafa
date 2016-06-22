@@ -1,0 +1,7 @@
+@import "../hpe-variables";
+@import "../bootstrap-variables";
+
+.hpe-breadcrumb .items:last-child {
+	color: $gray;
+	font-weight: normal;
+}

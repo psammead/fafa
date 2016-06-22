@@ -1,0 +1,29 @@
+/**
+ * LOGIN PAGE
+ */
+
+.authentication {
+    & > div.row {
+        position: relative;
+        top: 0 !important;
+        transform: none;
+        & > div {
+            position: absolute;
+            right: 0;
+            margin: 0;
+            padding: 0;
+        }
+    }
+    .login-window {
+        height: 100vh;
+        margin: 0;
+        position: relative;
+        background: rgba(255, 255, 255, 0.8);
+        border: none;
+        & > div {
+            position: relative;
+            top: 40%;
+            transform: translateY(-50%);
+        }
+    }
+}

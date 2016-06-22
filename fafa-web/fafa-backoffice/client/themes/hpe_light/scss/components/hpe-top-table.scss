@@ -1,0 +1,42 @@
+@import "../hpe-variables";
+@import "../bootstrap-variables";
+
+.hpe-top-table-main .slick-row.odd, .hpe-top-table-main .slick-row.even {
+    background-color: white;
+}
+
+.hpe-top-table-main  .slick-header-columns {
+    background: rgba(0,0,0,0);
+    font-weight: bold;
+    border-bottom: $brand-primary solid 4px;
+    background-image: none;
+}
+
+.hpe-top-table-main .slick-cell {
+    border: none;
+}
+
+.hpe-top-table-main .slick-cell.active {
+  border-color: $slate;
+  border-style: solid;
+  border-width: 2px; 
+}
+
+.hpe-top-table-main .slick-row {
+  border-bottom: none;
+  padding-top: 4px;
+}
+.hpe-top-table-main .slick-row + .slick-row {
+  border-top: $silver solid 2px;
+}
+.hpe-top-table-main .slick-row.slick-group:first-child {
+  border-top: none;
+}
+.hpe-top-table-main .slick-row.slick-group:not(:first-child) {
+  border-top: $brand-primary solid 4px;
+}
+
+.hpe-top-table-rank {
+  background-color: $brand-primary;
+}
+

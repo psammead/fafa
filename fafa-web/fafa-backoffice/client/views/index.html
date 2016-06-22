@@ -1,0 +1,102 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <base href="/">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" ng-href="{{ userThemeLocation }}/images/branding/favicon.ico" type="image/x-icon">
+    <link rel="icon" ng-href="{{ userThemeLocation }}/images/branding/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" ng-href="{{ userThemeLocation }}/css/bootstrap.css">
+    <link rel="stylesheet" ng-href="{{ userThemeLocation }}/css/main.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
+    <script src="../scripts/compatibility.js"></script>
+    <script src="bower_components/proj4/dist/proj4.js"></script>
+</head>
+
+<body>
+<!--[if lt IE 7]>
+<p class="browsehappy">
+    You are using an <strong>outdated</strong> browser. Please <a   href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+</p>
+<![endif]-->
+<div data-ng-view="" id="ng-view">
+    <style>
+        .hpe-main-page-spinner {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 84px;
+            height: 84px;
+            margin-top: -42px;
+            margin-left: -42px;
+
+            -webkit-animation: hpe-main-page-spin .6s infinite linear;
+            -moz-animation: hpe-main-page-spin .6s infinite linear;
+            -o-animation: hpe-main-page-spin .6s infinite linear;
+            animation: hpe-main-page-spin .6s infinite linear;
+            border-left: 4px solid #EFEFEF;
+            border-right: 4px solid #EFEFEF;
+            border-bottom: 4px solid #EFEFEF;
+            border-top: 4px solid #617C91;
+            border-radius: 100%;
+        }
+        
+        @-webkit-keyframes hpe-main-page-spin {
+            from {
+                -webkit-transform: rotate(0deg);
+            }
+            to {
+                -webkit-transform: rotate(359deg);
+            }
+        }
+        
+        @-moz-keyframes hpe-main-page-spin {
+            from {
+                -moz-transform: rotate(0deg);
+            }
+            to {
+                -moz-transform: rotate(359deg);
+            }
+        }
+        
+        @-o-keyframes hpe-main-page-spin {
+            from {
+                -o-transform: rotate(0deg);
+            }
+            to {
+                -o-transform: rotate(359deg);
+            }
+        }
+        
+        @keyframes hpe-main-page-spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(359deg);
+            }
+        }
+        </style>
+    <div class="hpe-main-page-spinner"></div>
+</div>
+<!--[if lt IE 9]>
+<script src="bower_components/es5-shim/es5-shim.js"></script>
+<script src="bower_components/json3/lib/json3.min.js"></script>
+<![endif]-->
+<script src="bower_components/requirejs/require.js" data-main="../scripts/main"></script>
+<!-- <script src="styles/hp-ui/js/bootstrap.min.js"></script> -->
+<!-- <div data-ng-include src=" 'partials/footer.html' "></div> -->
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+﻿{
+    "server": {
+        "protocol": "http",
+        "port": "3000"
+    },
+
+    "database": {
+        "protocol": "http",
+        "host": "127.0.0.1",
+        "port": "5984",
+        "username": "user",
+        "password": "user",
+        "adminPassword": "admin"
+    },
+
+    "authentication": {
+        "mode": "local",
+        "jwt": {
+            "algorithm": "HS256",
+            "expiresIn": "1440m",
+            "secret": "TheWalkingSkeleton"
+        },
+        "session": {
+            "sliding": false,
+            "idleTimeout": "30m",
+            "refreshInterval": "10m"
+        }
+    },
+
+    "saml": {
+        "idp": {
+            "entryPoint": "http://ossv031.gre.hpecorp.net:9080/idp",
+            "identifierFormat": "urn:oasis:names:tc:SAML:2.0:nameid-format:entity",
+            "certificate": "idpcert.pem",
+            "acceptedClockSkewMs": 0
+        },
+
+        "sp": {
+            "issuer": "http://localhost:9000/",
+            "privateKey": "nodekey.pem"
+        },
+
+        "signature": false,
+        "encryption": false
+    },
+
+    "startup": {
+        "loadLocalUIData": true,
+        "overwriteLocalUIData": true,
+        "loadRemoteUIData": true,
+        "overwriteRemoteUIData": true
+    },
+
+    "optimizeL10n": false,
+
+    "languages": [{
+        "name": "简体中文",
+        "languageCode": "zh-cn"
+    },{
+        "name": "English",
+        "languageCode": "en-us"
+    }],
+
+    "exportOptions": {
+        "maxSimultaneousUsers": 20,
+        "maxNumberOfRows": 300000,
+        "requestTimeout": "5m",
+        "csv": {
+            "delimiter":",",
+            "textQualifier":"\"",
+            "lineBreak":"\n",
+            "nullValue": "null",
+            "ignoreHeadersParameter": false,
+            "queryParameters": {
+                "show": true,
+                "fromToDateFormat":"YYYY-MM-DDTHH:mm:ss",
+                "granularity": {
+                    "durationUnit":"s",
+                    "durationFormat":"m [min] ss [sec]"
+                }
+            }
+        }
+    },
+
+    "bodyParser": {
+        "limit": "100Kb"
+    },
+
+    "csp": {
+        "defaultSrc": ["'self'"],
+        "styleSrc": ["'self'", "'unsafe-inline'"],
+        "scriptSrc": ["'self'", "'unsafe-eval'", "http://dev.virtualearth.net"],
+        "imgSrc": ["'self'", "data:", "http://*.openstreetmap.org", "http://*.virtualearth.net"],
+        "childSrc": ["*"],
+        "frameSrc": ["*"],
+        "baseUri": ["'self'"],
+        "formAction": ["'self'"]
+    },
+    "disableCrsfProtection": false,
+    "disableIndexRedirect": true
+}

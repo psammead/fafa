@@ -1,0 +1,5 @@
+<ul class="list-unstyled">
+	<li role="menu-item" data-ng-repeat="language in languages" data-ng-click="changeLanguage(language.languageCode)" class="selectable" data-ng-class="{selected: userLanguage === language.languageCode}">
+		<a href=""><img data-ng-src="{{language.icon}}" alt="flag-language"> &nbsp; {{ language.name }}</a>
+	</li>
+</ul>

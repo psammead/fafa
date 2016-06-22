@@ -1,0 +1,357 @@
+@import "./hpe-variables"; // Override bootstrap variables
+@import "./bootstrap-variables"; // bootstrap variables
+// MetricHPE
+@font-face {
+    font-family: "MetricHPE";
+    src: url("../fonts/MetricHPE/MetricHPE-Web-Light.woff");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MetricHPE";
+    src: url("../fonts/MetricHPE/MetricHPE-Web-LightItalic.woff");
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "MetricHPE";
+    src: url("../fonts/MetricHPE/MetricHPE-Web-Thin.woff");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MetricHPE";
+    src: url("../fonts/MetricHPE/MetricHPE-Web-ThinItalic.woff");
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "MetricHPE";
+    src: url("../fonts/MetricHPE/MetricHPE-Web-Regular.woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MetricHPE";
+    src: url("../fonts/MetricHPE/MetricHPE-Web-RegularItalic.woff");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "MetricHPE";
+    src: url("../fonts/MetricHPE/MetricHPE-Web-Medium.woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MetricHPE";
+    src: url("../fonts/MetricHPE/MetricHPE-Web-MediumItalic.woff");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "MetricHPE";
+    src: url("../fonts/MetricHPE/MetricHPE-Web-Semibold.woff");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MetricHPE";
+    src: url("../fonts/MetricHPE/MetricHPE-Web-SemiboldItalic.woff");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "MetricHPE";
+    src: url("../fonts/MetricHPE/MetricHPE-Web-Bold.woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MetricHPE";
+    src: url("../fonts/MetricHPE/MetricHPE-Web-BoldItalic.woff");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "MetricHPE";
+    src: url("../fonts/MetricHPE/MetricHPE-Web-Black.woff");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MetricHPE";
+    src: url("../fonts/MetricHPE/MetricHPE-Web-BlackItalic.woff");
+    font-weight: 800;
+    font-style: italic;
+}
+
+// HPE Simple
+@font-face {
+    font-family: "HPE Simple";
+    src: url("../fonts/HPE Simple/HPESimple-Light.woff");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HPE Simple";
+    src: url("../fonts/HPE Simple/HPESimple-LightOblique.woff");
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "HPE Simple";
+    src: url("../fonts/HPE Simple/HPESimple-Regular.woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HPE Simple";
+    src: url("../fonts/HPE Simple/HPESimple-Oblique.woff");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "HPE Simple";
+    src: url("../fonts/HPE Simple/HPESimple-Bold.woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "HPE Simple";
+    src: url("../fonts/HPE Simple/HPESimple-BoldOblique.woff");
+    font-weight: 700;
+    font-style: italic;
+}
+
+.hpe-menu-item-logo {
+    height: $navbar-height;
+}
+
+.color {
+    &-primary {
+        color: $brand-primary !important;
+        &-light {
+            color: lighten($brand-primary, 5%) !important;
+        }
+        &-dark {
+            color: darken($brand-primary, 17%) !important;
+        }
+    }
+    &-success {
+        color: $brand-success !important;
+        &-light {
+            color: lighten($brand-success, 5%) !important;
+        }
+        &-dark {
+            color: darken($brand-success, 17%) !important;
+        }
+    }
+    &-info {
+        color: $brand-info !important;
+        &-light {
+            color: lighten($brand-info, 5%) !important;
+        }
+        &-dark {
+            color: darken($brand-info, 17%) !important;
+        }
+    }
+    &-warning {
+        color: $brand-warning !important;
+        &-light {
+            color: lighten($brand-warning, 5%) !important;
+        }
+        &-dark {
+            color: darken($brand-warning, 17%) !important;
+        }
+    }
+    &-danger {
+        color: $brand-danger !important;
+        &-light {
+            color: lighten($brand-danger, 5%) !important;
+        }
+        &-dark {
+            color: darken($brand-danger, 17%) !important;
+        }
+    }
+}
+
+.background {
+    &-primary {
+        background-color: $brand-primary !important;
+        color: white !important;
+        &-light {
+            background-color: lighten($brand-primary, 5%) !important;
+            color: white !important;
+        }
+        &-dark {
+            background-color: darken($brand-primary, 17%) !important;
+            color: white !important;
+        }
+    }
+    &-success {
+        background-color: $brand-success !important;
+        color: white !important;
+        &-light {
+            background-color: lighten($brand-success, 5%) !important;
+            color: white !important;
+        }
+        &-dark {
+            background-color: darken($brand-success, 17%) !important;
+            color: white !important;
+        }
+    }
+    &-info {
+        background-color: $brand-info !important;
+        color: white !important;
+        &-light {
+            background-color: lighten($brand-info, 5%) !important;
+            color: white !important;
+        }
+        &-dark {
+            background-color: darken($brand-info, 17%) !important;
+            color: white !important;
+        }
+    }
+    &-warning {
+        background-color: $brand-warning !important;
+        color: white !important;
+        &-light {
+            background-color: lighten($brand-warning, 5%) !important;
+            color: white !important;
+        }
+        &-dark {
+            background-color: darken($brand-warning, 17%) !important;
+            color: white !important;
+        }
+    }
+    &-danger {
+        background-color: $brand-danger !important;
+        color: white !important;
+        &-light {
+            background-color: lighten($brand-danger, 5%) !important;
+            color: white !important;
+        }
+        &-dark {
+            background-color: darken($brand-danger, 17%) !important;
+            color: white !important;
+        }
+    }
+}
+
+.border {
+    &-primary {
+        border-color: $brand-primary !important;
+        &-light {
+            border-color: lighten($brand-primary, 5%) !important;
+        }
+        &-dark {
+            border-color: darken($brand-primary, 17%) !important;
+        }
+    }
+    &-success {
+        border-color: $brand-success !important;
+        &-light {
+            border-color: lighten($brand-success, 5%) !important;
+        }
+        &-dark {
+            border-color: darken($brand-success, 17%) !important;
+        }
+    }
+    &-info {
+        border-color: $brand-info !important;
+        &-light {
+            border-color: lighten($brand-info, 5%) !important;
+        }
+        &-dark {
+            border-color: darken($brand-info, 17%) !important;
+        }
+    }
+    &-warning {
+        border-color: $brand-warning !important;
+        &-light {
+            border-color: lighten($brand-warning, 5%) !important;
+        }
+        &-dark {
+            border-color: darken($brand-warning, 17%) !important;
+        }
+    }
+    &-danger {
+        border-color: $brand-danger !important;
+        &-light {
+            border-color: lighten($brand-danger, 5%) !important;
+        }
+        &-dark {
+            border-color: darken($brand-danger, 17%) !important;
+        }
+    }
+}
+
+.badge {
+    &-success {
+        background-color: $brand-success !important;
+    }
+    &-info {
+        background-color: $brand-info !important;
+    }
+    &-warning {
+        background-color: $brand-warning !important;
+    }
+    &-danger {
+        background-color: $brand-danger !important;
+    }
+}
+
+// Override bootstrap dropdown menu (ul)
+// when a second level of ul is generated in ul dropdown menu
+// (for instance change language and change theme in user pref menu)
+.dropdown-menu {
+// Links within the dropdown menu
+    li > a {
+        display: block;
+        padding: 3px 20px;
+        clear: both;
+        font-weight: normal;
+        line-height: $line-height-base;
+        color: $dropdown-link-color;
+        white-space: nowrap;
+    }
+
+    .selected > a {
+        background-color: $slate;
+        color: white;
+    }
+}
+
+// Hover/Focus state
+.dropdown-menu li > a {
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: $dropdown-link-hover-color;
+        background-color: $dropdown-link-hover-bg;
+    }
+}
+
+// padding applied to the body if the topbar/main menubar is removed
+.padding-no-topbar {
+    padding-top: 15px;
+}

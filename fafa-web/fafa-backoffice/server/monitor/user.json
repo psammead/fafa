@@ -1,0 +1,7 @@
+[{
+  "user_id": "admin",
+  "name": "Administrator",
+  "password": "admin",
+  "roles": ["View Designer","Platform Administrator", "User Administrator", "Package Designer", "Operator_L1", "Operator_L2", "Operator_L3", "Authorized_Operator_For_Loc", "Report_Exporter", "Guest"],
+  "description": "Super administrator with all rights on the platform"
+}]

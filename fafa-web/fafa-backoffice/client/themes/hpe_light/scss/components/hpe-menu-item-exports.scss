@@ -1,0 +1,6 @@
+@import "../hpe-variables";
+@import "../bootstrap-variables";
+
+.hpe-menu-item-exports ul li:nth-child(even) {
+    background: $silver;
+}

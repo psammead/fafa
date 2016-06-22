@@ -1,0 +1,18 @@
+{
+	"MESSAGE_NOTIFIER": {
+		"TITLE_ERROR": "有错误发生",
+		"TITLE_WARNING": "注意",
+		"STATUS_LABEL": "错误 ",
+		"DETAILS_LABEL": "详细 : ",
+
+		"NO_NOTIFICATION": "没有提示",
+		"CLEAR_ALL": "清除全部",
+
+		"INFO": "消息",
+		"SUCCESS": "成功",
+		"WARNING": "警告",
+		"ERROR": "错误",
+
+		"CLOSE": "关闭"
+	}
+}

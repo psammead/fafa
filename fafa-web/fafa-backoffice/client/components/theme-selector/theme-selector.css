@@ -1,0 +1,25 @@
+.theme-selector li a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857;
+    color: #5A5A5A;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+@media (max-width: 991px) {
+	
+	.theme-selector .selectable a {
+		color: #fff;
+	}
+	
+	.theme-selector .selectable:hover {
+		background: none;
+	}
+	
+	.theme-selector .selected, .theme-selector .selected:hover {
+		background-color: #007fb5;
+	}
+}

@@ -1,0 +1,11 @@
+{
+	"version": 3,
+	"file": "hpe-breadcrumb.css",
+	"sources": [
+		"../scss/components/hpe-breadcrumb.scss",
+		"../scss/_hpe-variables.scss",
+		"../scss/_bootstrap-variables.scss"
+	],
+	"mappings": "AAGA,eAAe,CAAC,MAAM,AAAA,WAAW,CAAC;EACjC,KAAK,ECOG,OAAG;EDNX,WAAW,EAAE,MAAO,GACpB",
+	"names": []
+}

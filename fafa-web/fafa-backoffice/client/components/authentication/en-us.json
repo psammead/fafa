@@ -1,0 +1,9 @@
+{
+  "AUTHENTICATION": {
+    "USERNAME": "Username",
+    "PASSWORD": "Password",
+    "SIGN_IN": "Sign in",
+    "AUTHENTICATION_FAILURE": "Authentication failure. Please check your username and password.",
+    "LOCKED_OUT_ACCOUNT": "Your account is locked out. Please contact your administrator."
+  }
+}

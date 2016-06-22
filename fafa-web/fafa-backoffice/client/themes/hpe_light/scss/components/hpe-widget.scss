@@ -1,0 +1,36 @@
+@import "../hpe-variables";
+@import "../bootstrap-variables";
+
+hpe-widget h1 {
+	font-size: $font-size-h3;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+}
+
+hpe-widget h2 {
+	font-size: $font-size-h4;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+}
+
+hpe-widget h3 {
+    font-size: $font-size-h4;
+    text-align: center;
+    vertical-align: middle;
+}
+
+hpe-widget h4 {
+	font-size: $font-size-h4;
+    text-align: center;
+    vertical-align: middle;
+}
+
+hpe-widget .hpe-widget-toolbar {
+    margin-bottom: 22px;
+}
+
+hpe-widget > div:last-child {
+    margin-bottom: 15px;
+}

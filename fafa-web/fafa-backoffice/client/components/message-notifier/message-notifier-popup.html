@@ -1,0 +1,32 @@
+<div class="modal-content message-notifier-popup">
+	<style>
+    @import url('/components/message-notifier/message-notifier-popup.css');
+    </style>
+    <div class="modal-header">
+        <h3 class="modal-title">
+            <span class="glyphicon" data-ng-class="{'glyphicon-remove-sign text-danger':error, 'glyphicon-warning-sign text-warning':warning}"></span>
+            <translate data-ng-if="error">MESSAGE_NOTIFIER.TITLE_ERROR</translate>
+            <translate data-ng-if="warning">MESSAGE_NOTIFIER.TITLE_WARNING</translate>
+            <i class="glyphicon glyphicon-remove pull-right" data-ng-click="cancel()"></i>
+        </h3>
+    </div>
+    <div class="modal-body">
+        <div data-ng-if="error">
+            <h4><translate>MESSAGE_NOTIFIER.STATUS_LABEL</translate>{{error.status}}</h4>
+            <h4><translate>MESSAGE_NOTIFIER.DETAILS_LABEL</translate></h4>
+            <p data-ng-if="!isString(error.data)" class="no-margin" data-ng-repeat="details in error.data track by $index">
+                <span data-ng-show="details.name"><strong>{{details.name}}: </strong></span>
+                {{details.message ? details.message : details}}
+            </p>
+            <p data-ng-if="isString(error.data)" class="no-margin">
+                {{error.data}}
+            </p>
+        </div>
+        <div data-ng-if="warning">
+            <p class="no-margin">{{warning}}</p>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn" data-ng-class="{'btn-warning':warning, 'btn-danger':error}" ng-click="ok()"><translate>MESSAGE_NOTIFIER.CLOSE</translate></button>
+    </div>
+</div>

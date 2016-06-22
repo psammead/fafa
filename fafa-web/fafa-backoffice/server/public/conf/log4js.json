@@ -1,0 +1,50 @@
+{
+    "appenders": [{
+        "type": "file",
+        "filename": "logs/sessions.log",
+        "level": "INFO",
+        "maxLogSize": 2048000,
+        "backups": 3,
+        "category": "sessions-logger",
+        "layout": {
+            "type": "pattern",
+            "pattern": "%d{ISO8601} - %h - %m"
+        }
+    }, {
+        "type": "file",
+        "filename": "logs/server.log",
+        "level": "WARN",
+        "maxLogSize": 2048000,
+        "backups": 3,
+        "category": "server-logger"
+    }, {
+        "type": "file",
+        "filename": "logs/http.log",
+        "level": "WARN",
+        "maxLogSize": 2048000,
+        "backups": 3,
+        "category": "express-logger"
+    }, {
+        "type": "file",
+        "filename": "logs/security.log",
+        "level": "INFO",
+        "maxLogSize": 2048000,
+        "backups": 3,
+        "category": "security-logger",
+        "layout": {
+            "type": "pattern",
+            "pattern": "%d{ISO8601} - %h - %m"
+        }
+    }, {
+        "type": "file",
+        "filename": "logs/platform.log",
+        "level": "INFO",
+        "maxLogSize": 2048000,
+        "backups": 3,
+        "category": "platform-logger",
+        "layout": {
+            "type": "pattern",
+            "pattern": "%m"
+        }        
+    }]
+}

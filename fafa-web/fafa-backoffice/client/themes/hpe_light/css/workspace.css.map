@@ -1,0 +1,11 @@
+{
+	"version": 3,
+	"file": "workspace.css",
+	"sources": [
+		"../scss/components/workspace.scss",
+		"../scss/_hpe-variables.scss",
+		"../scss/_bootstrap-variables.scss"
+	],
+	"mappings": "AAGA,UAAU,CAAC,sBAAsB,CAAC;EACjC,gBAAgB,EAAE,KAAM;EACrB,kBAAkB,ECOX,OAAG,GDNb",
+	"names": []
+}

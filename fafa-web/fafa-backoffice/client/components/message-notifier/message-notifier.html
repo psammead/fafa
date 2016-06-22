@@ -1,0 +1,52 @@
+<div class="message-notifier">
+	<style>
+		@import url('/components/message-notifier/message-notifier.css');
+	</style>
+	
+	<ul data-ng-show="messages &amp;&amp; messages.length" data-ng-click="$event.stopPropagation()" class="scroll-y notifications list-unstyled">
+	    <li data-ng-repeat="message in messages" class="alert alert-{{message.type}}" data-ng-class="{'no-margin': $last}">
+		    <a class="close" data-ng-href="" data-ng-click="delete(message)">&times;</a>
+		    <p>
+		    	<strong><i class="fa fa-lg" data-ng-class="{'fa-times-circle':message.type==='danger', 'fa-warning':message.type==='warning', 'fa-info-circle':message.type==='info', 'fa-check-circle':message.type==='success'}"></i> </strong>
+		    	{{message.text | translate: message.parameters}}
+		    </p>
+		</li>
+	</ul>
+
+	<div data-ng-show="!messages || !messages.length" class="notifications">
+		<p class="no-margin text-center"><translate>MESSAGE_NOTIFIER.NO_NOTIFICATION</translate></p>
+	</div>
+
+	<hr>
+	<button data-ng-click="clearAll()" class="btn btn-primary"><translate>MESSAGE_NOTIFIER.CLEAR_ALL</translate></button>
+	<button data-ng-click="configure=!configure;$event.stopPropagation();" class="btn pull-right" data-ng-class="{'btn-primary':configure, 'btn-default':!configure}"><i class="glyphicon glyphicon-cog"></i></button>
+	
+	<div data-ng-show="configure">
+		<table data-ng-click="$event.stopPropagation()" class="table">
+			<tr>
+				<td data-ng-class="{'background-info': parameters.infoEnabled}">
+					<div class="checkbox no-margin">
+						<label><input data-ng-model="parameters.infoEnabled" data-ng-change="setInfoEnabled(parameters.infoEnabled)" type="checkbox"> <translate>MESSAGE_NOTIFIER.INFO</translate></label>
+					</div>
+				</td>
+				<td data-ng-class="{'background-success': parameters.successEnabled}">
+					<div class="checkbox no-margin">
+						<label><input data-ng-model="parameters.successEnabled" data-ng-change="setSuccessEnabled(parameters.successEnabled)" type="checkbox"> <translate>MESSAGE_NOTIFIER.SUCCESS</translate></label>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td data-ng-class="{'background-warning': parameters.warningEnabled}">
+					<div class="checkbox no-margin">
+						<label><input data-ng-model="parameters.warningEnabled" data-ng-change="setWarningEnabled(parameters.warningEnabled)" type="checkbox"> <translate>MESSAGE_NOTIFIER.WARNING</translate></label>
+					</div>
+				</td>
+				<td data-ng-class="{'background-danger': parameters.dangerEnabled}">
+					<div class="checkbox no-margin">
+						<label><input data-ng-model="parameters.dangerEnabled" data-ng-change="setDangerEnabled(parameters.dangerEnabled)" type="checkbox"> <translate>MESSAGE_NOTIFIER.ERROR</translate></label>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+<div>

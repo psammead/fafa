@@ -1,0 +1,7 @@
+@import "../hpe-variables";
+@import "../bootstrap-variables";
+
+.workspace #workspaceSliderViewId {
+	background-color: white;
+    border-right-color: $silver;
+}

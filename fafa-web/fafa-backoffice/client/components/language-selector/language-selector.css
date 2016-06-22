@@ -1,0 +1,25 @@
+.language-selector li a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857;
+    color: #5A5A5A;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+@media (max-width: 991px) {
+	
+	.language-selector .selectable a {
+		color: #fff;
+	}
+	
+	.language-selector .selectable:hover {
+		background: none;
+	}
+	
+	.language-selector .selected, .language-selector .selected:hover {
+		background-color: #007fb5;
+	}
+}

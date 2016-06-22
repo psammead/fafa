@@ -1,0 +1,9 @@
+[{
+	"themeId": "hpe_light",
+	"name": "HPE Light",
+	"description": "HP Enterprise Theme (Light)",
+	"author": "hpe",
+	"version": "1.0",
+	"icon": "hpe_light.png",
+	"location": "/addons/hpe/themes/hpe_light"
+}]

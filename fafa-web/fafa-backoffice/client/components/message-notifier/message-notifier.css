@@ -1,0 +1,47 @@
+.message-notifier {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.message-notifier .margin-bottom-5 {
+	margin-bottom: 5px;
+}
+.message-notifier .notifications {
+	min-width: 300px;
+	padding-bottom: 5px;
+}
+.message-notifier hr {
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+.message-notifier .alert {
+	padding: 5px 7px;
+	margin-bottom: 5px;
+	font-weight: normal;
+	font-size: 12px;
+}
+.message-notifier .alert.no-margin, .message-notifier .no-margin {
+	margin: 0;
+}
+.message-notifier .alert .fa {
+	color: inherit;
+}
+.message-notifier .table {
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+.message-notifier .btn-primary .glyphicon {
+	color: #FFF;
+}
+.dropdown-menu .message-notifier li > .close {
+  	padding: 0;
+  	line-height: 1;
+}
+.dropdown-menu .message-notifier li > .close:hover {
+    background-color: transparent;
+}
+
+.message-notifier .scroll-y {
+	max-height: 30rem;
+  	overflow-x: hidden;
+  	overflow-y: auto;
+}

@@ -1,0 +1,302 @@
+@import "./hpe-variables"; // Override bootstrap variables
+@import "./bootstrap-variables"; // bootstrap variables
+@import "../bootstrap-sass-3.3.5/assets/stylesheets/bootstrap"; // bootstrap
+// Button
+// -------------------------
+.btn {
+    border-width: 2px;
+    padding: 5px 11px;
+    &:active,
+    &.active,
+    .open > &.dropdown-toggle {
+        &:hover,
+        &:focus,
+        &.focus {
+            color: white;
+        }
+    }
+    &:hover,
+    &:focus,
+    &.focus {
+        text-decoration: none;
+        outline: none;
+    }
+}
+
+.btn-default {
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+        &:hover,
+        &:focus,
+        &.focus,
+        &:active,
+        &.active {
+            color: $light-text-disabled;
+        }
+    }
+}
+
+.btn:not(.btn-primary) {
+    background: none;
+}
+
+.btn-inverse {
+    &.btn {
+        color: white;
+        &.btn-default {
+            border-color: white;
+        }
+    }
+}
+
+// Breadcrumb
+// -------------------------
+.breadcrumb {
+    background-color: $breadcrumb-bg;
+    > li {
+        display: inline-block;
+        font-weight: 700;
+        + li:before {
+            content: "#{$breadcrumb-separator}\00a0"; // Unicode space added since inline-block means non-collapsing white-space
+            padding: 0 5px;
+            font-weight: 400;
+            color: $breadcrumb-color;
+        }
+        > a {
+            color: $light-text-secondary;
+            &:hover {
+                color: $brand-primary;
+                text-decoration: none;
+            }
+        }
+    }
+    // not used in console
+    // > .active {
+    //     color: $breadcrumb-active-color;
+    // }
+    // workaround
+    > li:last-child a {
+        font-weight: 400;
+        color: $breadcrumb-color;
+    }
+}
+
+// Nav
+// -------------------------
+// Give the tabs something to sit on
+.nav {
+    > li {
+        > a {
+            color: $light-text-secondary;
+            transition: background 150ms ease-in-out;
+            &:hover,
+            &:focus {
+                color: $light-text-primary;
+            }
+        }
+        &.active {
+            > a {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+// Tabs
+// -------------------------
+// Give the tabs something to sit on
+.nav-tabs {
+    border-bottom: 2px solid $nav-tabs-border-color;
+    > li {
+        margin-bottom: 0;
+        // Actual tabs (as links)
+        > a {
+            margin-right: 2px;
+            line-height: $line-height-base;
+            border: none;
+            border-bottom: 3px solid transparent;
+            font-weight: 700;
+            transition: border-color 150ms ease-in-out, color 150ms ease-in-out;
+            &:hover {
+                background: none;
+                border-bottom: 3px solid $brand-primary;
+                color: $brand-primary;
+            }
+        }
+        // Active state, and its :hover to override normal :hover
+        &.active > a {
+            &,
+            &:hover,
+            &:focus {
+                border: none;
+                border-bottom: 3px solid $nav-tabs-active-link-hover-color;
+                color: $nav-tabs-active-link-hover-color;
+                font-weight: 700;
+                cursor: default;
+            }
+        }
+    }
+    // pulling this in mainly for less shorthand
+    &.nav-justified {
+        @extend .nav-justified;
+        @extend .nav-tabs-justified;
+    }
+}
+
+.nav-tabs-justified {
+    border-bottom: 2px solid $nav-tabs-border-color;
+    > li > a {
+        border: none;
+        border-bottom: 3px solid transparent;
+        &:hover,
+        &:focus {
+            border-bottom: 3px solid $nav-tabs-justified-link-border-color;
+        }
+    }
+    > .active > a,
+    > .active > a:hover,
+    > .active > a:focus {
+        border: none;
+        border-bottom: 3px solid $nav-tabs-justified-active-link-border-color;
+        color: $nav-tabs-justified-active-link-border-color;
+    }
+    @media (min-width: $screen-sm-min) {
+        > li > a {
+            border: none
+        }
+    }
+}
+
+// Pills
+// -------------------------
+.nav-pills {
+    > li {
+        > a {
+            color: $gray;
+            &:hover,
+            &:focus {
+                background: none;
+                color: $nav-pills-active-link-hover-color;
+            }
+        }
+        + li {
+            margin-left: 8px;
+        }
+        // Active state
+        &.active > a {
+            &,
+            &:hover,
+            &:focus {
+                background-color: $nav-pills-active-link-hover-bg;
+                color: $nav-pills-active-link-hover-color;
+                font-weight: normal;
+            }
+        }
+    }
+}
+
+.nav-stacked {
+    > li {
+        float: none;
+        &:hover,
+        &:focus {
+            background-color: $silver;
+            color: $text-color;
+            // font-weight: normal;
+        }
+        // Active state
+        &.active > a {
+            background: $brand-primary;
+            color: white;
+            font-weight: bold;
+            &:hover,
+            &:focus {
+                background: $brand-primary;
+                color: white;
+                font-weight: bold;
+            }
+        }
+        + li {
+            margin-top: 2px;
+            margin-left: 0; // no need for this gap between nav items
+        }
+    }
+}
+
+//
+// Pagination (multiple pages)
+// --------------------------------------------------
+.pagination {
+    font-weight: bold;
+    > li {
+        > a,
+        > span {
+            border: 2px solid $pagination-border;
+        }
+    }
+    > li > a,
+    > li > span {
+        min-width: 2.4em;
+        text-align: center;
+    }
+    > .active > a,
+    > .active > span {
+        &,
+        &:hover,
+        &:focus {
+            z-index: 4;
+        }
+    }
+}
+
+//
+// Table
+// --------------------------------------------------
+.table {
+    // Cells
+    > thead {
+        > tr {
+            > th {
+                border-bottom: 4px solid $brand-primary;
+            }
+        }
+    }
+    > tbody {
+        > tr {
+            > td {
+                border-top: 2px solid $table-border-color;
+            }
+        }
+    }
+}
+
+//
+// Forms
+// --------------------------------------------------
+.form-control {
+    &[disabled],
+    &[readonly],
+    fieldset[disabled] & {
+        color: $light-text-disabled;
+    }
+}
+
+//== Dropdowns
+//
+.dropdown-menu {
+    border-color: transparent;
+}
+
+.dropdown-header {
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+}
+
+
+//
+// List Group Item
+// --------------------------------------------------
+.list-group-item {
+    outline:none;
+}

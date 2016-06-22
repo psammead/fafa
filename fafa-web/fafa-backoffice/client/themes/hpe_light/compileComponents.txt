@@ -1,0 +1,1 @@
+node-sass -w --recursive scss\components\ --output css\ --source-map true

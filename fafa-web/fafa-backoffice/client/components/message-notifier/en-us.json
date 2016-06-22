@@ -1,0 +1,18 @@
+{
+	"MESSAGE_NOTIFIER": {
+		"TITLE_ERROR": "An error occured",
+		"TITLE_WARNING": "Warning",
+		"STATUS_LABEL": "Error ",
+		"DETAILS_LABEL": "Details: ",
+
+		"NO_NOTIFICATION": "There is no notification",
+		"CLEAR_ALL": "Clear All",
+
+		"INFO": "Info",
+		"SUCCESS": "Success",
+		"WARNING": "Warning",
+		"ERROR": "Error",
+
+		"CLOSE": "Close"
+	}
+}

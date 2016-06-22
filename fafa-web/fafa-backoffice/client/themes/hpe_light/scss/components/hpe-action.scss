@@ -1,0 +1,48 @@
+@import "../hpe-variables";
+@import "../bootstrap-variables";
+//Action Grid
+.hpe-action-grid-cell:hover {
+    background-color: lighten($brand-primary, 5%) !important;
+}
+
+//Action Accordion
+.hpe-action-accordion .panel-body a:hover {
+    text-decoration: none;
+    color: $text-color;
+    background-color: $silver;
+}
+
+.hpe-action-accordion .panel-group .divider + .list-group-item {
+    border-top-color: $silver;
+}
+
+.hpe-action-accordion .panel-group .list-group-item a {
+    color: $gray;
+}
+
+.hpe-action-accordion .panel-body .linkSelected, .hpe-action-accordion .panel-body a.linkSelected:hover {
+  text-decoration: none;
+  color: white;
+  background-color: $slate; 
+}
+
+//Action List
+.hpe-action-list .panel-body a:hover {
+    text-decoration: none;
+    color: $text-color;
+    background-color: $silver;
+}
+
+.hpe-action-list .panel-group .divider + .list-group-item {
+    border-top-color: $silver;
+}
+
+.hpe-action-list .panel-group .list-group-item a {
+    color: $gray;
+}
+
+.hpe-action-list .panel-body .linkSelected, .hpe-action-list .panel-body a.linkSelected:hover {
+  text-decoration: none;
+  color: white;
+  background-color: $slate; 
+}

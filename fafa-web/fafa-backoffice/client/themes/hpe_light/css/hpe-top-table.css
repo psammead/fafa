@@ -1,0 +1,34 @@
+.hpe-top-table-main .slick-row.odd, .hpe-top-table-main .slick-row.even {
+  background-color: white; }
+
+.hpe-top-table-main .slick-header-columns {
+  background: transparent;
+  font-weight: bold;
+  border-bottom: #01a982 solid 4px;
+  background-image: none; }
+
+.hpe-top-table-main .slick-cell {
+  border: none; }
+
+.hpe-top-table-main .slick-cell.active {
+  border-color: #425563;
+  border-style: solid;
+  border-width: 2px; }
+
+.hpe-top-table-main .slick-row {
+  border-bottom: none;
+  padding-top: 4px; }
+
+.hpe-top-table-main .slick-row + .slick-row {
+  border-top: #f0f0f0 solid 2px; }
+
+.hpe-top-table-main .slick-row.slick-group:first-child {
+  border-top: none; }
+
+.hpe-top-table-main .slick-row.slick-group:not(:first-child) {
+  border-top: #01a982 solid 4px; }
+
+.hpe-top-table-rank {
+  background-color: #01a982; }
+
+/*# sourceMappingURL=hpe-top-table.css.map */

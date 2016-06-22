@@ -1,0 +1,1 @@
+node-sass -w scss\main.scss css\main.css --sourcemap true

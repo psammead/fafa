@@ -1,0 +1,29 @@
+hpe-widget h1 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle; }
+
+hpe-widget h2 {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle; }
+
+hpe-widget h3 {
+  font-size: 18px;
+  text-align: center;
+  vertical-align: middle; }
+
+hpe-widget h4 {
+  font-size: 18px;
+  text-align: center;
+  vertical-align: middle; }
+
+hpe-widget .hpe-widget-toolbar {
+  margin-bottom: 22px; }
+
+hpe-widget > div:last-child {
+  margin-bottom: 15px; }
+
+/*# sourceMappingURL=hpe-widget.css.map */

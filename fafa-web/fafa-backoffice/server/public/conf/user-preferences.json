@@ -1,0 +1,14 @@
+{
+	"title":"Unified OSS Console",
+	"version":"<UOC:VERSION>",
+	"link":"/",
+	"language":"en-us",
+	"theme":"hpe_light",
+	"_theme":"slate",
+	"showMenuBar": true,
+	"menuBar":"hpe-menu-bar",
+	"_menuBar":"menu-bar-demo",
+	"showWorkspaceManager": true,
+	"_showWorkspaceManager": false,
+	"_initialWorkspace": "demo-bell"
+}

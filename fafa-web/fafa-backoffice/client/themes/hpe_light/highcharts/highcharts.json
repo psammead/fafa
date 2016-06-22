@@ -1,0 +1,26 @@
+{
+    "chart": {
+        "style": {
+            "fontFamily": "'MetricHPE', sans-serif"
+        }
+    },
+    "title": {
+        "style": {
+            "color": "#333333",
+            "font-size": "24px",
+            "fontWeight": "bold",
+            "text-align": "center",
+            "vertical-align": "middle",
+            "fontFamily": "'MetricHPE', sans-serif"
+        }
+    },
+    "subtitle": {
+        "style": {
+            "color": "#333333",
+            "font-size": "18px",
+            "text-align": "center",
+            "vertical-align": "middle",
+            "fontFamily": "'MetricHPE', sans-serif"
+        }
+    }
+}

@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "hpe-widget-menu-bar.css",
+	"sources": [
+		"../scss/components/hpe-widget-menu-bar.scss"
+	],
+	"mappings": "AAAA,mBAAmB,CAAC,KAAK,CAAC;EACzB,YAAY,EAAE,YAAa,GAC3B",
+	"names": []
+}
