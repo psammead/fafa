@@ -9,13 +9,14 @@ define([
     'angularCookies',
     'ngIdle',
     'commons/events/commons-events',
+    'commons/restapi/commons-restapi',
     'components/message-notifier/message-notifier-services'
 ], function(angular, _) {
     'use strict';
 
     var authenticationServices = angular.module('authenticationServices', ['ngCookies', 'angular-data.DSCacheFactory', 'ngIdle', 'commonsRestapi',, 'messageNotifierServices', 'commonsEvents', 'ui.bootstrap']);
     
-    authenticationServices.service('authenticationService', ['$http', 'restapiService',, 'messageNotifierService', '$rootScope', '$location', '$q', '$cookies', '$window', '$log', 'DSCacheFactory', 'events',
+    authenticationServices.service('authenticationService', ['$http', 'restapiService', 'messageNotifierService', '$rootScope', '$location', '$q', '$cookies', '$window', '$log', 'DSCacheFactory', 'events',
         function($http, restapiService, messageNotifierService, $rootScope, $location, $q, $cookies, $window, $log, DSCacheFactory, events) {
 
             var initialized = false;

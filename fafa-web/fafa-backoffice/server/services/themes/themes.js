@@ -97,7 +97,7 @@ function ThemeManager() {
         securityLogger.logTheme(req, 'All themes has been accessed');
 
         if (!themes) {
-            browseAddons();
+            //browseAddons();
         }
 
         res.status(200).send(themes);
@@ -112,7 +112,7 @@ function ThemeManager() {
         securityLogger.logTheme(req, util.format('Theme %s has been accessed', req.params.themeId));
 
         if (!themes) {
-            browseAddons();
+            //browseAddons();
         }
 
         var theme = _.find(themes, {

@@ -5,21 +5,21 @@
 
 define([
         'angular',
-        'components/user-preferences/user-preferences-services'        
+        'components/user-preferences/user-preferences-services'
     ],
     function(angular) {
         'use strict';
-        return angular.module('mainControllers', ['userPreferencesServices']).
-        controller('mainController',  ['$scope', '$window', 'userPreferencesService',
+        return angular.module('mainControllers', ['userPreferencesServices'])
+            .controller('mainController',  ['$scope', '$window', 'userPreferencesService',
             function($scope, $window, userPreferencesService) {
                 // this option turn on/off the workspace manager in the main page
-            $scope.showWorkspaceManager = userPreferencesService.getShowWorkspaceManager();
-
-            var wks = userPreferencesService.getInitialWorkspace();
-
-            if (wks) {
-                $window.location.href = '/workspaces/' + wks;
-            }
+            //$scope.showWorkspaceManager = userPreferencesService.getShowWorkspaceManager();
+                console.log("main controller");
+//            var wks = userPreferencesService.getInitialWorkspace();
+//
+//            if (wks) {
+//                $window.location.href = '/workspaces/' + wks;
+//            }
 
         }]);
     });

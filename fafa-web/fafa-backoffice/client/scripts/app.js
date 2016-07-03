@@ -124,6 +124,7 @@ xmlhttp.onreadystatechange = function() {
             return angular.module('fafaApp', moduleDependency)
                 .config(['$routeProvider', '$locationProvider', '$httpProvider', 'accessLevel', 'DSCacheFactoryProvider',
                     function($routeProvider, $locationProvider, $httpProvider, accessLevel, DSCacheFactoryProvider) {
+                        console.log("fafaApp");
                         $routeProvider
                             .when('/', {
                                 templateUrl: 'partials/main',
@@ -151,7 +152,7 @@ xmlhttp.onreadystatechange = function() {
                             })
                             .when('/logout', {
                                 resolve: {
-                                    'redirect': logoutRedirect,
+                                    'redirect': logoutRedirect
                                 }
                             })
                             // This 404 webpage should be handled by express (because all components/client modules are loaded before displaying its content)

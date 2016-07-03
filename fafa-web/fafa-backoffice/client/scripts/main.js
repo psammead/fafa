@@ -7,7 +7,7 @@ require.config({
         angularCookies: '../bower_components/angular-cookies/angular-cookies.min',
         angularSanitize: '../bower_components/angular-sanitize/angular-sanitize.min',
         angularBootstrap: '../bower_components/angular-bootstrap/ui-bootstrap-tpls.min',
-        d3: '../addons/bower_components/d3/d3',
+        d3: '../bower_components/d3/d3',
         jquery: '../bower_components/jquery/dist/jquery.min',
         jqueryui: '../bower_components/jquery-ui/jquery-ui.min',
         jqueryKnob: '../bower_components/jquery-knob/dist/jquery.knob.min',
@@ -212,6 +212,7 @@ require.config({
 require(['app', 'angular'], function(app, angular) {
     'use strict';
     angular.element().ready(function() {
+        console.log("main.js");
         angular.bootstrap(document, [app.name]);
     });
 });

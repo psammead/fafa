@@ -12,8 +12,8 @@ var hashUtils = require(path.join(process.env.ROOT, 'server', 'utils', 'hashUtil
 var serverLogger = require(path.join(process.env.ROOT, 'server', 'logger', 'server-logger'));
 
 //Passport local configurtion
-exports.local = function(passport) {
-    passport.use(new LocalStrategy(function(username, password, done) {
+exports.local = function (passport) {
+    passport.use(new LocalStrategy(function (username, password, done) {
 //        db.view('users', 'by_user_id', {
 //            keys: [username]
 //        }, function(err, body) {
@@ -39,23 +39,28 @@ exports.local = function(passport) {
 //                }
 //            }
 //        });
-        var users = fs.readdirSync(path.join(process.env.ROOT, 'server', 'monitor', 'users.json'));
-        if(users.length > 0) {
-            users.forEach(function(user){
-                if(user.user_id === username) {
-                    if( user.password === password) {
-                        return done(null, user);
+        fs.readFile(path.join(process.env.ROOT, 'server', 'monitor', 'user.json'), function (error, data) {
+                if (!error ) {
+                    var users = JSON.parse(data);
+                    if (users.length > 0) {
+                        users.forEach(function (user) {
+                            if (user.user_id === username) {
+                                if (user.password === password) {
+                                    return done(null, user);
+                                }
+                                return done(null, false);
+                            }
+                        });
                     }
-                    done(null, false);
                 }
-            });
-        }
-        done(null, false);
+                done(null, false);
+            }
+        );
     }));
 };
 
 //Passport SAML configuration
-exports.saml = function(passport) {
+exports.saml = function (passport) {
 
     var settings = {
         protocol: process.env.PROTOCOL + '://',
@@ -74,7 +79,7 @@ exports.saml = function(passport) {
     var samlStrategyCallback;
 
     //Extract informations from the SAML assertion manually
-    var defaultSamlStrategyCallback = function(profile, done) {
+    var defaultSamlStrategyCallback = function (profile, done) {
         var parser = xml2js.parseString;
         var user = {
             nameID: profile.nameID,
@@ -84,13 +89,13 @@ exports.saml = function(passport) {
             preferences: {}
         };
 
-        parser(profile.getAssertionXml(), function(err, result) {
+        parser(profile.getAssertionXml(), function (err, result) {
             if (err) {
                 done(err);
             }
             else {
                 try {
-                    result['saml:Assertion']['saml:AttributeStatement'][0]['saml:Attribute'].forEach(function(attribute) {
+                    result['saml:Assertion']['saml:AttributeStatement'][0]['saml:Attribute'].forEach(function (attribute) {
                         if (attribute.$.Name === 'Role') {
                             user.roles.push(attribute['saml:AttributeValue'][0]._);
                         }

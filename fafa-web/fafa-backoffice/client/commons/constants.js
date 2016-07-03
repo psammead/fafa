@@ -11,7 +11,7 @@ function() {
     	OFFSET: 0,        
         // Defaults user preferences
         DEFAULT_TITLE:'Fafa back-office',
-        DEFAULT_VERSION:'2.3',
+        DEFAULT_VERSION:'0.1',
         DEFAULT_LINK:'/',
         DEFAULT_THEME:'hpe',
         DEFAULT_LANGUAGE:'zh-cn',
